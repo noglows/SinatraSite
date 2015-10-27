@@ -25,4 +25,5 @@ class MySite < Sinatra::Base
   get "/fav_things" do
     erb :fav_things
   end
+
 end
