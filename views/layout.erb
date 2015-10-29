@@ -17,17 +17,16 @@
           <a href="<%= page[1] %>"><%= page[0] %></a>
         <% end %>
       <% end %>
-      <!-- <a href="about">About Me</a>
-      <a href="projects">Projects</a>
-      <a href="blog">Blog</a>
-      <a href="fav_things">Favorite Things</a> -->
     </nav>
   </header>
   <%= yield %>
 
   <footer>
     <p>
-      Built in October 2015
+      <% require 'date' %>
+      <% @time_now = Time.new %>
+      &copy <%= Date.today.strftime("%B") %>
+      <%= @time_now.year %>
     </p>
   </footer>
 
