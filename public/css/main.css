@@ -27,7 +27,7 @@
    font-family: Roboto, sans-serif;
    font-weight: 300;
    width: 700px;
-   margin-left: 300px;
+   margin-left: 250px;
  }
 
 h1 {
@@ -60,6 +60,11 @@ footer {
   /*margin: 0 auto;*/
 }
 
+#triangle {
+  width: 100px;
+  margin-left: 300px;
+  margin-top: -10px;
+}
 /* Specific to About page */
 
 
