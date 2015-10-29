@@ -114,7 +114,7 @@ table {
 
 td, th {
     padding: 8px 15px;
-    text-align: right;
+    text-align: left;
 }
 
 td:first-child, th:first-child {
@@ -128,6 +128,7 @@ tr:last-child td {
 
 td:last-child, th:last-child {
     padding-right: 0;
+    text-align: right
 }
 
 th {
@@ -136,6 +137,11 @@ th {
 
 td {
     border-bottom: 1px solid #ddd;
+}
+
+.table_icon {
+  width: 30px;
+  height: 30px;
 }
 
 
