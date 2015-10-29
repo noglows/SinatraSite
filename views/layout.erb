@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <meta charset="utf-8">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="icons/face.png" />
+  <link  href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,900' rel='stylesheet' type='text/css'>
+</head>
+<img id="triangle" src="triangle.jpg">
+<body>
+  <header>
+    <h1><%= @page_header %></h1>
+    <nav>
+      <% @page_options.each do |page| %>
+        <% if page[0] != @title %>
+          <a href="<%= page[1] %>"><%= page[0] %></a>
+        <% end %>
+      <% end %>
+      <!-- <a href="about">About Me</a>
+      <a href="projects">Projects</a>
+      <a href="blog">Blog</a>
+      <a href="fav_things">Favorite Things</a> -->
+    </nav>
+  </header>
+  <%= yield %>
+
+  <footer>
+    <p>
+      Built in October 2015
+    </p>
+  </footer>
+
+</body>
+
+</html>
