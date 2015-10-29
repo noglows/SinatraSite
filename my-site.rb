@@ -12,6 +12,19 @@ class MySite < Sinatra::Base
     return @page_options
   end
 
+  def stored_gifs
+     @gif_options = ["halloween.gif",
+    "http://i.imgur.com/FG2wcV7.gif",
+    "http://i.imgur.com/k6o6lvs.gif",
+    "http://i.imgur.com/x49iBe9.gif",
+    "http://giant.gfycat.com/HardUnacceptableCockerspaniel.gif",
+    "http://i.imgur.com/EpTz5rO.webm",
+    "http://i.imgur.com/FWJtwXm.webm",
+    "https://i.imgur.com/WJBkMZ1.gif"
+   ]
+    return @gif_options
+  end
+
   get "/" do
     @title = "Home"
     @page_header = "Jessica Noglows"
@@ -51,6 +64,7 @@ class MySite < Sinatra::Base
     @title = "Favorite Things"
     @page_header = "My Favorite Things"
     set_variables
+    stored_gifs
     erb :fav_things
   end
 

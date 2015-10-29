@@ -1,7 +1,18 @@
   <article>
     <p>
-      Here are some of my favorite things at the moment:
+      Here are some of my favorite things at the moment. First, here's a random GIF from a collection of my favorites (I couldn't pick just one...):
     </p>
+    <p>
+      <strong>Gif of the Moment</strong>
+    </p>
+      <% @selected_gif = @gif_options[rand(0...@gif_options.length)] %>
+      <% if @selected_gif[-1] == "f" %>
+        <img src= <%= @selected_gif %> width="500" >
+      <% else %>
+        <video width="500" autoplay="autoplay" preload="auto" loop="loop">
+          <source src=<%= @selected_gif %> type="video/webm" ></source>
+        </video>
+      <% end %>
     <p>
       <strong>Favorite Song: 2AM - Dandy Lion Remix</strong>
     </p>
@@ -19,7 +30,3 @@
     <strong>Favorite Picture: Apollo 13 Moon Landing</strong>
   </p>
   <img src="moon.jpg" width="500" />
-  <p>
-    <strong>Gif of the Day</strong>
-  </p>
-  <img src="halloween.gif" width="500" />
