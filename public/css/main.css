@@ -193,3 +193,12 @@ td {
 #pets_table td:last-child, th:last-child{
   text-align:right;
 }
+
+#pets_table {
+  margin-bottom: 50px;
+}
+
+#instagram_feed {
+  width: 500px;
+  height: 300px;
+}

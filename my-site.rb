@@ -51,7 +51,7 @@ class MySite < Sinatra::Base
       end
     end
     return @all_ages = all_ages
-  end
+  end  
 
   get "/" do
     @title = "Home"
