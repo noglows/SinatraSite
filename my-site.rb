@@ -20,7 +20,8 @@ class MySite < Sinatra::Base
     "http://giant.gfycat.com/HardUnacceptableCockerspaniel.gif",
     "http://i.imgur.com/EpTz5rO.webm",
     "http://i.imgur.com/FWJtwXm.webm",
-    "https://i.imgur.com/WJBkMZ1.gif"
+    "https://i.imgur.com/WJBkMZ1.gif",
+    "http://i.giphy.com/SkAmQQlxFPfDW.gif"
    ]
    @selected_gif = @gif_options[rand(0...@gif_options.length)]
     return @selected_gif
