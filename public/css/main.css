@@ -101,6 +101,11 @@ header {
   margin-top: -10px;
 }
 
+/* Specific to fav things */
+.fav_thing {
+  width: 500px;
+}
+
 
 /* Specific to About page */
 

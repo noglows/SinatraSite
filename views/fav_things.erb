@@ -7,26 +7,26 @@
     </p>
       <% @selected_gif = @gif_options[rand(0...@gif_options.length)] %>
       <% if @selected_gif[-1] == "f" %>
-        <img src= <%= @selected_gif %> width="500" >
+        <img class="fav_thing" src= <%= @selected_gif %>>
       <% else %>
-        <video width="500" autoplay="autoplay" preload="auto" loop="loop">
+        <video class="fav_thing" autoplay="autoplay" preload="auto" loop="loop">
           <source src=<%= @selected_gif %> type="video/webm" ></source>
         </video>
       <% end %>
     <p>
       <strong>Favorite Song: 2AM - Dandy Lion Remix</strong>
     </p>
-    <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A2Iq8sshB8qY44fLvJxrR8d" width="500" height="380" frameborder="0" allowtransparency="true"></iframe>
+    <iframe class="fav_thing" src="https://embed.spotify.com/?uri=spotify%3Atrack%3A2Iq8sshB8qY44fLvJxrR8d" height="380" frameborder="0" allowtransparency="true"></iframe>
   </article>
   <p>
     <strong>Favorite Movie: Lars and the Real Girl</strong>
   </p>
-    <iframe width="500" height="280" src="https://www.youtube.com/embed/XNcs9DrKYRU" frameborder="0" allowfullscreen></iframe>
+    <iframe class="fav_thing" height="280" src="https://www.youtube.com/embed/XNcs9DrKYRU" frameborder="0" allowfullscreen></iframe>
   <p>
     <strong>Favorite TV Show: Broad City</strong>
   </p>
-    <iframe width="500" height="280" src="https://www.youtube.com/embed/3tDN5DYsNk0" frameborder="0" allowfullscreen></iframe>
+    <iframe class="fav_thing" height="280" src="https://www.youtube.com/embed/3tDN5DYsNk0" frameborder="0" allowfullscreen></iframe>
   <p>
     <strong>Favorite Picture: Apollo 13 Moon Landing</strong>
   </p>
-  <img src="moon.jpg" width="500" />
+  <img src="moon.jpg" class="fav_thing" />
