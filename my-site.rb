@@ -22,7 +22,8 @@ class MySite < Sinatra::Base
     "http://i.imgur.com/FWJtwXm.webm",
     "https://i.imgur.com/WJBkMZ1.gif"
    ]
-    return @gif_options
+   @selected_gif = @gif_options[rand(0...@gif_options.length)]
+    return @selected_gif
   end
 
   get "/" do

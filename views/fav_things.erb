@@ -5,7 +5,6 @@
     <p>
       <strong>Gif of the Moment</strong>
     </p>
-      <% @selected_gif = @gif_options[rand(0...@gif_options.length)] %>
       <% if @selected_gif[-1] == "f" %>
         <img class="fav_thing" src= <%= @selected_gif %>>
       <% else %>
